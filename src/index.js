@@ -407,6 +407,7 @@ export default class ParallaxScroll extends Component {
       contentContainerStyle,
       renderParallaxBackground,
       renderParallaxForeground,
+      disableStickyHeaderItems,
       ...scrollViewProps
     } = this.props;
 
@@ -418,7 +419,7 @@ export default class ParallaxScroll extends Component {
       !((sections && renderItem) || (sections && sections[0].renderItem)) &&
       !(dataSource && renderRow);
 
-    if (isRenderChildComponents && renderParallaxForeground) {
+    if (!disableStickyHeaderItems && isRenderChildComponents && renderParallaxForeground) {
       stickyHeaderIndices.push(stickyHeaderIndices.length);
     }
 
