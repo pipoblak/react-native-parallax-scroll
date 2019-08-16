@@ -1,6 +1,6 @@
 [![](https://img.shields.io/npm/dm/@monterosa/react-native-parallax-scroll.svg?style=flat-square)](https://www.npmjs.com/package/@monterosa/react-native-parallax-scroll)
 
-# react-native-parallax-scroll
+# react-native-parallax-scroll - FORKED
 
 A `ScrollView`-like component that:
 
@@ -13,7 +13,7 @@ A `ScrollView`-like component that:
 ## Installation
 
 ```
-$ npm install @monterosa/react-native-parallax-scroll --save
+$ npm install @pipoblak/react-native-parallax-scroll --save
 ```
 
 ## Demo

@@ -1,10 +1,10 @@
 {
-  "name": "@monterosa/react-native-parallax-scroll",
-  "version": "1.8.0",
-  "description": "Parallax scroll for React Native",
+  "name": "@pipoblak/react-native-parallax-scroll",
+  "version": "1.8.0-1",
+  "description": "Parallax scroll for React Native - FORK",
   "repository": {
     "type": "git",
-    "url": "https://github.com/monterosalondon/react-native-parallax-scroll.git"
+    "url": "https://github.com/pipoblak/react-native-parallax-scroll"
   },
   "license": "MIT",
   "main": "src/index.js",
