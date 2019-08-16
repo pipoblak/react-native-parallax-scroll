@@ -48,7 +48,8 @@ export default class ParallaxScroll extends Component {
     headerFixedBackgroundColor: PropTypes.string,
     renderBackgroundPlaceholder: PropTypes.func,
     parallaxBackgroundScrollSpeed: PropTypes.number,
-    parallaxForegroundScrollSpeed: PropTypes.number
+    parallaxForegroundScrollSpeed: PropTypes.number,
+    disableStickyHeaderItems: PropTypes.bool,
   };
 
   static defaultProps = {
@@ -85,7 +86,8 @@ export default class ParallaxScroll extends Component {
     headerFixedBackgroundColor: 'rgba(0, 0, 0, 1)',
     renderBackgroundPlaceholder: null,
     parallaxBackgroundScrollSpeed: 5,
-    parallaxForegroundScrollSpeed: 5
+    parallaxForegroundScrollSpeed: 5,
+    disableStickyHeaderItems: false,
   };
 
   scrollY = new Animated.Value(0);
