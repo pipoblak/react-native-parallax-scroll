@@ -456,7 +456,7 @@ export default class ParallaxScroll extends Component {
 
           {isRenderChildComponents && children}
 
-          {isRenderChildComponents &&
+          {isRenderChildComponents && renderChildren &&
             renderChildren({ width, height, animatedValue: this.scrollY })
           }
         </ScrollableComponent>
