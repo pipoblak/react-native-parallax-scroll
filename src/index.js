@@ -25,6 +25,7 @@ export default class ParallaxScroll extends Component {
     scrollStyle: PropTypes.oneOfType([PropTypes.number, PropTypes.object]),
     headerHeight: PropTypes.number,
     renderHeader: PropTypes.func,
+    renderChildren: PropTypes.func,
     isHeaderFixed: PropTypes.bool,
     onHeaderFixed: PropTypes.func,
     parallaxHeight: PropTypes.number,
@@ -67,6 +68,7 @@ export default class ParallaxScroll extends Component {
     scrollStyle: {},
     headerHeight: 45,
     renderHeader: null,
+    renderChildren: null,
     isHeaderFixed: false,
     onHeaderFixed: () => {},
     parallaxHeight: window.width * RATIO,
@@ -410,6 +412,7 @@ export default class ParallaxScroll extends Component {
       renderParallaxBackground,
       renderParallaxForeground,
       disableStickyHeaderItems,
+      renderChildren,
       ...scrollViewProps
     } = this.props;
 
@@ -452,6 +455,10 @@ export default class ParallaxScroll extends Component {
           {isRenderChildComponents && this._renderBackgroundPlaceholder()}
 
           {isRenderChildComponents && children}
+
+          {isRenderChildComponents &&
+            renderChildren({ width, height, animatedValue: this.scrollY })
+          }
         </ScrollableComponent>
 
         {!isRenderChildComponents && renderParallaxForeground && this._renderParallaxForeground()}
